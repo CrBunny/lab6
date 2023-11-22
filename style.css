@@ -1,0 +1,124 @@
+body{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Vina Sans', sans-serif;
+}
+header, footer{
+    height: 10rem;
+    background-color:rgb(64, 64, 141) ;
+    display: flex;
+    flex-direction: row;
+}
+header{
+    border-bottom: solid white 3px;
+}
+.api{
+    height: 150px;
+}
+.api:hover{
+    transform: rotate(360deg);
+    transition: 1.0s ease-in-out;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 25%;
+}
+li{
+    list-style: none;
+    margin: 10px;
+    background-color: rgb(175, 127, 64);
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.4) 0 5px 5px;
+}
+li:hover{
+transform: translateY(-10px);
+transition: 0.4s ease;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section{
+    height: 27rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2 {
+    margin: auto;
+    background-color: seagreen;
+}
+.block{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 350px;
+    width: 200px;
+    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    margin:0 0 0 50px;
+    border-radius: 10px;
+    box-shadow: rgba(43, 255, 0, 0.5) 0 5px 5px;
+}
+.block:nth-child(1):hover{
+    scale: 110%;
+    transform: rotate(3deg);
+    transition: 1.0s ease;
+}
+.block:nth-child(2):hover{
+    scale: 110%;
+    transform: rotate(-3deg);
+    transition: 1.0s ease;
+}
+.block:nth-child(3):hover{
+    scale: 110%;
+    border-radius: 130px;
+    transition: 1.0s ease;
+}
+.block:nth-child(4):hover{
+    scale: 110%;
+    transform: rotate(360deg);
+    transition: 1.0s ease;
+}
+.text-block{
+    height: 300px;
+    width: 200px;
+    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    margin:0 0 0 50px;
+    border-radius: 10px;
+    box-shadow: rgba(43, 255, 0, 0.5) 0 5px 5px;
+    text-align: center;
+}
+.text-block:nth-child(1){
+    font-family: "Pacifico";
+}
+.text-block:nth-child(2){
+    font-family: "personal";
+    line-height: 22px;
+}
+.text-block:nth-child(3){
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+}
+.text-block:nth-child(4){
+    font-family: 'Times New Roman';
+}
+@font-face{
+    font-family: 'personal';
+    src: url('personal.ttf');
+}
+footer{
+    border-top: solid white 3px;
+    justify-content: center;
+    font-size: 140px;
+}
